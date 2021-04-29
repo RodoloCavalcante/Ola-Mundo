@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style type="text/css">
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #a09c9c;
+        }
+        #top{
+            color: rgb(121, 54, 121);
+        }
+
+        li>a{
+            text-decoration: none;
+            color: rgb(48, 98, 172);
+
+        }
+
+        li>a:visited{
+            color: rgb(109, 29, 29);
+        }
+
+        li>a:hover{
+            color: #095b66;
+        }
+
+        .note>a{
+            text-decoration: none;
+            color: rgb(28, 88, 99);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Kitchen Garden Calender</h1>
+    <p id="introduction">Here you can read our handy guide about what to do when.</p>
+    <h2>Spring</h2>
+    <ul>
+        <li><a href="multch.html">Spring mulch vegetable beds</a></li>
+        <li><a href="potato.html">Plant out early potatoes</a></li>
+        <li><a href="tomato.html">Show tomato seeds</a></li>
+        <li><a href="beet.html">Sow beet seeds</a></li>
+        <li><a href="zucchini.html">Sow zucchini seeds</a></li>
+        <li><a href="rhubarb.html">Deadhead rhubard flowers</a></li>
+
+    </ul>
+    <p class="note">
+        This page was writeen by
+        <a href="mailto:ivy@example.org">ivy@example.org</a> for <a href="http://www.example.org">Example</a>
+    </p>
+    <a href="#top">Top of page</a>
+</body>
+</html>

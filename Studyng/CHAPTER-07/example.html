@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Forms</title>
+</head>
+<body>
+    <form action="www.example.com/review.php" method="GET">
+        <fieldset>
+            <legend>
+                Your Details
+            </legend>
+            <label for="name">Nome
+                <input type="text" name="nome" placeholder="Nome Completo" maxlength="100" height="30"><br>
+            </label>
+            <label for="email"> Email
+                <input type="text" name="email" placeholder="mail@mail.com" maxlength="100" height="30">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Your Review
+            </legend>
+            <p>
+               
+                <label for="hear-about">How did you hear about us?</label>
+                <select name="referrer" id="hear-about">
+                 <option value="google">Google</option>
+                 <option value="friend">Friend</option>
+                 <option value="advert">Advert</option>
+                 <option value="other">Other</option>
+                </select>
+            </p>
+            <p>Would you visit again?
+                <br>
+                <label for="yes"></label>
+                <input type="radio" name="rating" value="yes">
+                    Yes
+                </label>
+                <label for="No">
+                <input type="radio" name="rating" value="no">
+                    No
+                </label>
+                <label for="maybe">
+                    <input type="radio" name="rating" value="maybe">
+                    Maybe
+                </label>
+            </p>
+           <p>
+               <label for="comments">
+                   Comments:
+               </label>
+               <br>
+               <textarea name="comments" id="comments" cols="40" rows="4">
+               </textarea>
+           </p> 
+           <label for="sing-up">
+               <input type="checkbox" name="subscribe" checked>
+               Sign me up for email updates
+           </label>
+           <br>
+           <input type="submit" value="Submit review">
+        </fieldset>
+    </form>
+</body>
+</html>
